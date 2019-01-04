@@ -1,6 +1,6 @@
-//package io.anymobi.config;
-//
-//import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
-//
-//public class SecurityWebApplicationInitializer extends AbstractSecurityWebApplicationInitializer {
-//}
+package io.anymobi.config;
+
+import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
+
+public class SecurityWebApplicationInitializer extends AbstractSecurityWebApplicationInitializer {
+}
