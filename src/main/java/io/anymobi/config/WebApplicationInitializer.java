@@ -5,6 +5,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 import javax.servlet.Filter;
 
+
 public class WebApplicationInitializer
         extends AbstractAnnotationConfigDispatcherServletInitializer {
 
@@ -12,7 +13,7 @@ public class WebApplicationInitializer
     @Override
     protected Class<?>[] getRootConfigClasses() {
 
-        return new Class[] { AppConfig.class, WebSecurityConfig.class };
+        return new Class[] { RootConfig.class/*, WebSecurityConfig.class*/ };
     }
 
     // Load spring web configuration

@@ -9,7 +9,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-@EnableWebSecurity
+//@EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
@@ -27,13 +27,17 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests().anyRequest().hasAnyRole("ADMIN", "USER")
-                .and()
-                .authorizeRequests().antMatchers("/login**").permitAll()
-                .and()
-                .formLogin().loginPage("/login").loginProcessingUrl("/loginAction").permitAll()
-                .and()
-                .logout().logoutSuccessUrl("/login").permitAll()
+        http.authorizeRequests()
+                .antMatchers("/login", "/logout", "/", "/j_spring_security_check").permitAll()
+                .antMatchers("/admin/**").access("hasRole('ROLE_ADMIN')")
+                .antMatchers("/dba/**").access("hasRole('ROLE_ADMIN') or hasRole('ROLE_DBA')")
+                .anyRequest().hasAnyRole("ADMIN", "USER")
+                .and().formLogin().loginPage("/login").loginProcessingUrl("/loginAction").permitAll()
+                //.loginPage("/login")
+                .defaultSuccessUrl("/")//
+                .failureUrl("/login?error=true")//
+                .and().logout().logoutUrl("/logout").logoutSuccessUrl("/")
+                .and().requiresChannel().antMatchers("/login").requiresSecure()
                 .and()
                 .csrf().disable();
     }
