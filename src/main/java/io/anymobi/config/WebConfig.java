@@ -91,12 +91,12 @@ public class WebConfig implements WebMvcConfigurer {
         return viewResolver;
     }
 
-//    @Override
-//    public void configureViewResolvers(ViewResolverRegistry registry) {
-//
-//        InternalResourceViewResolver resolver = new InternalResourceViewResolver("/WEB-INF/views/",".jsp");
-//        resolver.setViewClass(JstlView.class); //jstl 사용시
-//        registry.viewResolver(resolver);
-//
-//    }
+    @Override
+    public void configureViewResolvers(ViewResolverRegistry registry) {
+
+        InternalResourceViewResolver resolver = new InternalResourceViewResolver("/WEB-INF/views/",".jsp");
+        resolver.setViewClass(JstlView.class); //jstl 사용시
+        registry.viewResolver(resolver);
+
+    }
 }
