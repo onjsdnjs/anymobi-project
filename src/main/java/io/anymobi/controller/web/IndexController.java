@@ -17,9 +17,9 @@ public class IndexController {
     public String index(Model model, Principal principal) {
         //model.addAttribute("message", "You are logged in as onjsdnjs" + principal.getName());
         model.addAttribute("message", "You are logged in as onjsdnjs");
-        logger.debug("test");
-        logger.error("test");
-        logger.warn("test");
+        logger.debug("test1");
+        logger.error("test2");
+        logger.warn("test3");
         return "index";
     }
 }
