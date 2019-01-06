@@ -25,6 +25,7 @@ public class UserAdapter extends User {
     }
 
     public io.anymobi.domain.entity.User getUser() {
+
         return user;
     }
 }

@@ -23,7 +23,7 @@ public class MybatisDataConfig extends DataConfig {
         SqlSessionFactoryBean sb = new SqlSessionFactoryBean();
         sb.setDataSource(dataSource);
         sb.setConfigLocation(new DefaultResourceLoader().getResource("classpath:mybatis/config_mybatis.xml"));
-        sb.setMapperLocations(new Resource[] { new ClassPathResource("mybatis/mapper/UserMapper.xml"),
+        sb.setMapperLocations(new Resource[] { new ClassPathResource("mybatis/mapper/MemberMapper.xml"),
                 new ClassPathResource("mybatis/mapper/DeptMapper.xml") });
         return sb.getObject();
     }

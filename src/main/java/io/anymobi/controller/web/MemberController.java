@@ -1,8 +1,8 @@
 package io.anymobi.controller.web;
 
 import io.anymobi.common.CommonLogger;
-import io.anymobi.domain.dto.UserDTO;
-import io.anymobi.services.mybatis.users.UserService;
+import io.anymobi.domain.dto.MemberDTO;
+import io.anymobi.services.mybatis.users.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,28 +19,28 @@ import java.util.List;
  *
  */
 @RestController
-public class UserController extends CommonLogger<UserController> {
+public class MemberController extends CommonLogger<MemberController> {
 
 	@Autowired
-    UserService userService;
+	MemberService MemberService;
 	
 	@PostMapping(value="/rest/member/register")
-	public void registerMember(UserDTO user) throws Exception {
+	public void registerMember(MemberDTO Member) throws Exception {
 
-		userService.insertUser(user);
+		MemberService.insertMember(Member);
 		
 	}
 	
 	@GetMapping(value="/rest/member/{id}")
-	public UserDTO selectMember(@PathVariable Long id) throws Exception {
+	public MemberDTO selectMember(@PathVariable Long id) throws Exception {
 
-		UserDTO user = userService.selectUser(id);
-		return user;
+		MemberDTO Member = MemberService.selectMember(id);
+		return Member;
 	}
 
 	@GetMapping(value="/rest/member/list")
-	public List<UserDTO> selectMemberList(UserDTO user) throws Exception {
+	public List<MemberDTO> selectMemberList(MemberDTO Member) throws Exception {
 		
-		return userService.selectUserList(user);
+		return MemberService.selectMemberList(Member);
 	}
 }

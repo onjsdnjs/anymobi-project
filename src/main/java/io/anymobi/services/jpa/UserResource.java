@@ -1,7 +1,7 @@
 package io.anymobi.services.jpa;
 
 import io.anymobi.controller.rest.UserRestController;
-import io.anymobi.controller.web.UserController;
+import io.anymobi.controller.web.MemberController;
 import io.anymobi.domain.entity.User;
 import lombok.Getter;
 import org.springframework.hateoas.Link;
@@ -15,7 +15,7 @@ public class UserResource extends Resource<User> {
 
     public UserResource(User User, Link... links) {
         super(User, links);
-        add(linkTo(UserController.class).withRel("User"));
+        add(linkTo(MemberController.class).withRel("User"));
         add(linkTo(methodOn(UserRestController.class).getUser(User.getId(), null)).withSelfRel());
     }
 

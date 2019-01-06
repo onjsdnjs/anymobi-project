@@ -7,9 +7,6 @@ import io.anymobi.repositories.jpa.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.data.domain.Example;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -18,19 +15,13 @@ import java.util.Optional;
 
 @Primary
 @Service
-public class UserService extends CommonLogger<UserService> implements UserDetailsService {
+public class UserService extends CommonLogger<UserService> {
 
     @Autowired
     UserRepository userRepository;
 
     @Autowired
     PasswordEncoder passwordEncoder;
-
-    @Override
-    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-        userRepository.findByEmailIgnoreCase(email).orElseThrow(() -> new UsernameNotFoundException(email));
-        return new UserAdapter(userRepository.findByEmailIgnoreCase(email).get());
-    }
 
     @SoftTransational
     public Optional<User> findById(Long id) {

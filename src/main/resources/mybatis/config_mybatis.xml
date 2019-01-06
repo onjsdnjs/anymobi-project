@@ -13,6 +13,6 @@
 		<typeAlias alias="map" type="java.util.Map" />
   		<typeAlias alias="string" type="java.lang.String" />
 		<typeAlias alias="int" type="java.lang.Integer" />
-		<typeAlias alias="user" type="io.anymobi.domain.dto.UserDTO" />
+		<typeAlias alias="member" type="io.anymobi.domain.dto.MemberDTO" />
 	</typeAliases>
 </configuration>
