@@ -1,6 +1,5 @@
 package io.anymobi.config.web;
 
-import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.MessageSource;
@@ -18,8 +17,6 @@ import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.*;
 import org.springframework.web.servlet.i18n.CookieLocaleResolver;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
-import org.springframework.web.servlet.view.InternalResourceViewResolver;
-import org.springframework.web.servlet.view.JstlView;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
@@ -39,7 +36,7 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
+        registry.addResourceHandler("/**").addResourceLocations("/resources/");
     }
 
     @Override
@@ -122,13 +119,13 @@ public class WebConfig implements WebMvcConfigurer {
         return viewResolver;
     }
 
-    @Override
-    @Profile("prod")
-    public void configureViewResolvers(ViewResolverRegistry registry) {
-
-        InternalResourceViewResolver resolver = new InternalResourceViewResolver("/WEB-INF/views/",".jsp");
-        resolver.setViewClass(JstlView.class); //jstl 사용시
-        registry.viewResolver(resolver);
-
-    }
+//    @Override
+//    @Profile("prod")
+//    public void configureViewResolvers(ViewResolverRegistry registry) {
+//
+//        InternalResourceViewResolver resolver = new InternalResourceViewResolver("/WEB-INF/views/",".jsp");
+//        resolver.setViewClass(JstlView.class); //jstl 사용시
+//        registry.viewResolver(resolver);
+//
+//    }
 }
