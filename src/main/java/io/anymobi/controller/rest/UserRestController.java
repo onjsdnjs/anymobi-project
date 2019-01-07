@@ -31,7 +31,7 @@ public class UserRestController extends CommonLogger<UserRestController> {
     @Autowired
     UserService userService;
 
-    @GetMapping(path = "/Users/{id}", produces = {"application/vnd.siren+json"})
+    @GetMapping(path = "/users/{id}", produces = {"application/vnd.siren+json"})
     public ResponseEntity<Resource<User>> getOneById(@PathVariable Long id) {
         Optional<User> UserOptional = userService.findById(id);
         if (UserOptional.isPresent()) {
@@ -51,7 +51,7 @@ public class UserRestController extends CommonLogger<UserRestController> {
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
-    @GetMapping(path = "/Users", produces = {"application/vnd.siren+json"})
+    @GetMapping(path = "/users", produces = {"application/vnd.siren+json"})
     public ResponseEntity<Resources<Resource<User>>> getAll() {
         List<User> Users = userService.findAll();
         List<Resource<User>> UserResources = new ArrayList<>();
@@ -67,7 +67,7 @@ public class UserRestController extends CommonLogger<UserRestController> {
                 linkTo(methodOn(UserRestController.class).getAll()).withSelfRel()), HttpStatus.OK);
     }
 
-    @PostMapping(path = "/Users", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    @PostMapping(path = "/users", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<User> create(@RequestBody User user) {
 
         logger.info("hop hey");
@@ -95,7 +95,7 @@ public class UserRestController extends CommonLogger<UserRestController> {
         return ResponseEntity.ok().body(UserResource);
     }
 
-    @PutMapping(path = "/Users/{id}")
+    @PutMapping(path = "/users/{id}")
     public ResponseEntity<User> update(@PathVariable Long id, @RequestBody User User) {
 
         Optional<User> currentUser = userService.findById(id);
@@ -107,7 +107,7 @@ public class UserRestController extends CommonLogger<UserRestController> {
         return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
     }
 
-    @DeleteMapping(path = "/Users/{id}")
+    @DeleteMapping(path = "/users/{id}")
     public ResponseEntity.HeadersBuilder<?> delete(@PathVariable Long id) {
         userService.deleteById(id);
         return ResponseEntity.noContent();
