@@ -1,7 +1,7 @@
 package io.anymobi.services.security;
 
 import io.anymobi.repositories.jpa.UserRepository;
-import io.anymobi.services.jpa.UserAdapter;
+import io.anymobi.services.jpa.user.UserAdapter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

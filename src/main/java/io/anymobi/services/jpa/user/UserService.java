@@ -1,4 +1,4 @@
-package io.anymobi.services.jpa;
+package io.anymobi.services.jpa.user;
 
 import io.anymobi.common.CommonLogger;
 import io.anymobi.common.annotation.SoftTransational;

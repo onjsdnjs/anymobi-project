@@ -1,4 +1,4 @@
-package io.anymobi.services.mybatis.members;
+package io.anymobi.services.mybatis.member;
 
 import io.anymobi.domain.dto.MemberDTO;
 

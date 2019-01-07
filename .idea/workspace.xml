@@ -7,24 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6af3710-10a2-4578-bec6-779003a7804c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/common/batch/ChartGenerateBatchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/common/filter/CsrfHeaderFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/websock/sockjs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/websock/stomp.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/websock/websock_handler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/member/MemberServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/common/listener/mq/WebSockMessageMqListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/common/listener/mq/WebSockMessageMqListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/config/common/RootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/config/common/RootConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/config/data/AmqpConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/config/data/AmqpConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/config/web/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/config/web/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/config/web/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/config/web/WebSocketConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/AbstractBaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/AbstractBaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/users/MemberService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/users/MemberServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/common/provider/MqPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/common/provider/MqPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/controller/rest/UserRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/controller/rest/UserRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/controller/web/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/controller/web/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/UserAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/user/UserAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/user/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/UserSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/user/UserSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/members/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/member/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/members/MemberServiceImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/services/security/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/services/security/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db.dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db.prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.prod.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -121,8 +115,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="7" />
-          <entry key="JAVA" value="574" />
+          <entry key="HTML" value="9" />
+          <entry key="JAVA" value="647" />
           <entry key="JavaScript" value="18" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="116" />
@@ -131,13 +125,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="16" />
-          <entry key="HTML" value="2" />
-          <entry key="JAVA" value="71" />
+          <entry key="CLASS" value="17" />
+          <entry key="HTML" value="3" />
+          <entry key="JAVA" value="88" />
           <entry key="JSP" value="2" />
           <entry key="JavaScript" value="5" />
           <entry key="Properties" value="8" />
-          <entry key="XML" value="3" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -189,22 +183,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/controller/web/IndexController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/config/web/WebConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/batch/ChartGenerateBatchController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="133">
+              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -212,17 +194,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/config/common/RootConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+            <state relative-caret-position="152">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/config/data/AmqpConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/member/MemberService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="38" column="97" selection-start-line="38" selection-start-column="97" selection-end-line="38" selection-end-column="97" />
+            <state relative-caret-position="173">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -231,58 +213,70 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/db.prod.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/member/MemberServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="33" selection-start-line="33" selection-end-line="44" selection-end-column="31" />
+            <state relative-caret-position="95">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/db.dev.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/user/UserAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+            <state relative-caret-position="159">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/config/data/JpaDataConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/user/UserResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="24" column="67" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="67" />
+            <state relative-caret-position="95">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/user/UserSerializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/user/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/config/web/WebSecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="30" column="41" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/config/data/DataConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.prod.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/config/web/WebSocketConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="152">
+              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -293,8 +287,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="package.json" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -346,11 +340,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/common/ErrorResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/UserResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/repositories/jpa/UserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/config/data/DataConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/config/common/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/config/data/JpaDataConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/users/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/repositories/mybatis/CommonSqlRepositoryImpl.java" />
@@ -362,7 +351,6 @@
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/repositories/mybatis/mapper/member/MemberMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/MemberDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/users/MemberService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/controller/web/MemberController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/config_mybatis.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/MemberMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/common/UserDetailsServiceImpl.java" />
@@ -378,25 +366,31 @@
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/MessagePacket.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/common/handler/websocket/WebsockMsgBrocker.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/common/provider/MqPublisher.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/users/MemberServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/common/listener/WebSockMessageMqListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/common/listener/mq/WebSockMessageMqListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/members/MemberService.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/AbstractBaseService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/members/MemberServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/config/common/RootConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/common/batch/ChartGenerateBatchController.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/config/web/WebSocketConfig.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/websock/websock_handler.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/common/filter/CsrfHeaderFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/config/web/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/services/security/UserDetailsServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db.prod.properties" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/config/data/AmqpConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db.dev.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/members/MemberService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/controller/web/MemberController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/common/provider/MqPublisher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/members/MemberServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/members/MemebrServices.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/services/MemberServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/member/MemberService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/MemberServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/user/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" />
       </list>
     </option>
   </component>
@@ -492,15 +486,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="anymobi" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amplatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amplatform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anymobi" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -511,35 +496,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="anymobi" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amplatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amplatform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anymobi" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amplatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amplatform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anymobi" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amplatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amplatform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anymobi" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -559,14 +515,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="anymobi" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="amplatform" type="b2602c69:ProjectViewProjectNode" />
               <item name="amplatform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="anymobi" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="amplatform" type="b2602c69:ProjectViewProjectNode" />
@@ -602,23 +561,6 @@
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="websock" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="amplatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amplatform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amplatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amplatform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -629,7 +571,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546849882763" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546851476560" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../udemy/amplatform" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -637,7 +579,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.34606743" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -662,6 +604,7 @@
       <recent name="io.anymobi.common.enums" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="io.anymobi.services.mybatis.members" />
       <recent name="io.anymobi.repository" />
     </key>
   </component>
@@ -775,7 +718,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75323000" />
+    <option name="totallyTimeSpent" value="76826000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -788,7 +731,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -800,16 +742,16 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4277959" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4277959" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3989071" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32943013" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32790446" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32943013" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32681867" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32681867" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32943013" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32899022" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" weight="0.32943013" />
       <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
@@ -853,61 +795,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE-sources.jar!/org/springframework/web/servlet/config/annotation/WebMvcConfigurer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.1.3.RELEASE/spring-messaging-5.1.3.RELEASE.jar!/org/springframework/messaging/core/AbstractMessageSendingTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.1.3.RELEASE/spring-messaging-5.1.3.RELEASE-sources.jar!/org/springframework/messaging/core/AbstractMessageSendingTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1577">
-          <caret line="120" column="16" selection-start-line="120" selection-start-column="16" selection-end-line="120" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/handler/websocket/WebsockMsgBrocker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/handler/websocket/WSHandShakeHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-websocket/5.1.3.RELEASE/spring-websocket-5.1.3.RELEASE.jar!/org/springframework/web/socket/server/support/AbstractHandshakeHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="143" column="25" selection-start-line="143" selection-start-column="25" selection-end-line="143" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-websocket/5.1.3.RELEASE/spring-websocket-5.1.3.RELEASE-sources.jar!/org/springframework/web/socket/server/support/AbstractHandshakeHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2337">
-          <caret line="234" column="25" selection-start-line="234" selection-start-column="25" selection-end-line="234" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.1.2.RELEASE/spring-amqp-2.1.2.RELEASE.jar!/org/springframework/amqp/support/converter/Jackson2JsonMessageConverter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -950,16 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/provider/MqPublisher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.4/lombok-1.18.4-sources.jar!/lombok/extern/slf4j/Slf4j.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
@@ -986,30 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/UserSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/UserResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/users/MemberService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1028,37 +881,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/UserAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/AbstractBaseService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/members/MemberServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="813">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/members/MemberService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -1112,13 +938,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.1.2.RELEASE/spring-security-web-5.1.2.RELEASE.jar!/org/springframework/security/web/csrf/CsrfToken.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1144,13 +963,6 @@
             <element signature="e#890#891#0" expanded="true" />
             <element signature="e#962#963#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/config/web/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1212,13 +1024,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/config/common/RootConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/db.prod.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
@@ -1254,6 +1059,138 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/MemberMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/repositories/mybatis/mapper/member/MemberMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/controller/web/MemberController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="41" column="42" lean-forward="true" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/amplatform/WEB-INF/classes/io/anymobi/services/mybatis/Members/MemberServiceImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-349">
+          <folding>
+            <element signature="e#0#1643#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/provider/MqPublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/config/common/RootConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/config/web/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/members/MemebrServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/member/MemberService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/MemberServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/member/MemberServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/user/UserAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/user/UserResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/user/UserSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/user/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/config/web/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="30" column="41" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
         </state>
       </provider>
     </entry>
