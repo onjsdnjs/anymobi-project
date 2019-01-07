@@ -4,6 +4,7 @@ import io.anymobi.common.CommonLogger;
 import io.anymobi.common.annotation.SoftTransational;
 import io.anymobi.domain.entity.User;
 import io.anymobi.repositories.jpa.UserRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.data.domain.Example;
@@ -15,7 +16,8 @@ import java.util.Optional;
 
 @Primary
 @Service
-public class UserService extends CommonLogger<UserService> {
+@Slf4j
+public class UserService{
 
     @Autowired
     UserRepository userRepository;

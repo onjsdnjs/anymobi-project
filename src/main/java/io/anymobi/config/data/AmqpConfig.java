@@ -12,6 +12,7 @@ import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.env.Environment;
 import org.springframework.messaging.converter.MappingJackson2MessageConverter;
 import org.springframework.messaging.handler.annotation.support.DefaultMessageHandlerMethodFactory;
 
@@ -20,8 +21,8 @@ import org.springframework.messaging.handler.annotation.support.DefaultMessageHa
 @EnableRabbit
 public class AmqpConfig implements RabbitListenerConfigurer {
 
-    /*@Autowired
-    public ConnectionFactory connectionFactory;*/
+    @Autowired
+    private Environment env;
 
     @Override
     public void configureRabbitListeners(RabbitListenerEndpointRegistrar registrar) {
@@ -30,9 +31,12 @@ public class AmqpConfig implements RabbitListenerConfigurer {
 
     @Bean
     public ConnectionFactory connectionFactory() {
-        CachingConnectionFactory connectionFactory = new CachingConnectionFactory("localhost");
-        connectionFactory.setUsername("guest");
-        connectionFactory.setPassword("guest");
+        CachingConnectionFactory connectionFactory = new CachingConnectionFactory(env.getProperty("rabbitmq.host"));
+        connectionFactory.setUsername(env.getProperty("rabbitmq.username"));
+        connectionFactory.setPassword(env.getProperty("rabbitmq.password"));
+        connectionFactory.setVirtualHost(env.getProperty("rabbitmq.virtualhost"));
+        connectionFactory.setPort(Integer.valueOf(env.getProperty("rabbitmq.port")));
+        connectionFactory.setConnectionLimit(Integer.valueOf(env.getProperty("rabbitmq.connectiontimeout")));
         return connectionFactory;
     }
 

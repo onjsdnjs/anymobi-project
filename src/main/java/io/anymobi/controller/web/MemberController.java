@@ -1,8 +1,8 @@
 package io.anymobi.controller.web;
 
-import io.anymobi.common.CommonLogger;
 import io.anymobi.domain.dto.MemberDTO;
-import io.anymobi.services.mybatis.users.MemberService;
+import io.anymobi.services.mybatis.members.MemberService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,7 +19,8 @@ import java.util.List;
  *
  */
 @RestController
-public class MemberController extends CommonLogger<MemberController> {
+@Slf4j
+public class MemberController {
 
 	@Autowired
 	MemberService MemberService;

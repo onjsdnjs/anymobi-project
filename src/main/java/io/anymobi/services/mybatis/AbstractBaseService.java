@@ -2,6 +2,7 @@ package io.anymobi.services.mybatis;
 
 import io.anymobi.common.CommonLogger;
 import io.anymobi.repositories.mybatis.CommonSqlRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
@@ -11,7 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
  * </PRE>
  *
  */
-public abstract class AbstractBaseService<T> extends CommonLogger<T> {
+@Slf4j
+public abstract class AbstractBaseService<T> {
 
 	@Autowired
 	protected CommonSqlRepository commonSqlRepository;

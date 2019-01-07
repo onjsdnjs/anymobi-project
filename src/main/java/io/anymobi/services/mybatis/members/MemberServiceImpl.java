@@ -1,12 +1,10 @@
-package io.anymobi.services.mybatis.Members;
+package io.anymobi.services.mybatis.members;
 
 import io.anymobi.common.provider.MqPublisher;
 import io.anymobi.domain.dto.MemberDTO;
 import io.anymobi.domain.dto.MessagePacket;
 import io.anymobi.repositories.mybatis.mapper.member.MemberMapper;
 import io.anymobi.services.mybatis.AbstractBaseService;
-import io.anymobi.services.mybatis.users.MemberService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -25,6 +23,7 @@ public class MemberServiceImpl extends AbstractBaseService<MemberServiceImpl> im
 	private final MqPublisher mqPublisher;
 
 	public MemberServiceImpl(MqPublisher mqPublisher) {
+
 		this.mqPublisher = mqPublisher;
 	}
 
