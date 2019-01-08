@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequestMapping("/batch")
-public class ChartGenerateBatchController {
+public class BatchExecutor {
 
     private final Environment environment;
 
     @Autowired
-    public ChartGenerateBatchController(Environment environment) {
+    public BatchExecutor(Environment environment) {
         this.environment = environment;
     }
 
