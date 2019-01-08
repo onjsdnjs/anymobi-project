@@ -32,23 +32,31 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
+
+        http
+                .csrf()
+                .disable()
+                .authorizeRequests()
+                .antMatchers("/forbidden").denyAll()
+                .antMatchers("/**").permitAll();
+        /*http.authorizeRequests()
                 .antMatchers("/images/**","/css/**","/js/**","/login", "/logout", "/", "/j_spring_security_check").permitAll()
                 .antMatchers("/admin/**").access("hasRole('ROLE_ADMIN')")
                 .antMatchers("/dba/**").access("hasRole('ROLE_ADMIN') or hasRole('ROLE_DBA')")
                 .anyRequest().hasAnyRole("ADMIN", "USER")
-                .and().formLogin().loginPage("/login").loginProcessingUrl("/loginAction").permitAll()
+                .and().formLogin().permitAll()
+                //.loginPage("/login").loginProcessingUrl("/loginAction").permitAll()
                 //.loginPage("/login")
                 .defaultSuccessUrl("/")//
                 .failureUrl("/login?error=true")//
                 .and().logout().logoutUrl("/logout").logoutSuccessUrl("/").permitAll()
                 .deleteCookies("remember-me")
-                .and().requiresChannel().antMatchers("/login").requiresSecure()
+                //.and().requiresChannel().antMatchers("/login").requiresSecure()
                 .and()
                 .rememberMe()
                 .and()
                 .addFilterAfter(new CsrfHeaderFilter(), CsrfFilter.class)
-                .csrf().csrfTokenRepository(csrfTokenRepository()).disable();
+                .csrf().csrfTokenRepository(csrfTokenRepository()).disable();*/
     }
 
     @Bean

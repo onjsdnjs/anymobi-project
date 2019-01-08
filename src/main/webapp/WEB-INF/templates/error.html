@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Store</title>
+    <link rel="stylesheet" th:href="@{css/main.css}">
+    <!-- <script src="https://cdn.jsdelivr.net/sockjs/1/sockjs.min.js"></script>
+    <script th:src="js/websock/stomp.min.js"></script>
+    <script th:src="js/websock/websock_handler.js?dummy="></script> -->
+</head>
+<body>
+<h1>BOOK STORE</h1>
+<table>
+    <tr th:each="book : ${books}">
+        <td th:text="${book.name}"/>
+    </tr>
+</table>
+<span th:text="${curDate}"/><br/>
+<img th:src="@{/images/img001.jpg}">
+</body>
+</html>

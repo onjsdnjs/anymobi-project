@@ -5,13 +5,19 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.messaging.simp.SimpMessagingTemplate;
+import org.springframework.messaging.simp.SimpMessageSendingOperations;
 import org.springframework.stereotype.Service;
-
 
 @Slf4j
 @Service
 public class WebsockMsgBrocker {
+
+    private SimpMessageSendingOperations simpMessagingTemplate;
+
+   /* @Autowired
+    public WebsockMsgBrocker(SimpMessageSendingOperations messaging){
+        this.simpMessagingTemplate=messaging;
+    }*/
 
     @Data
     @Builder
@@ -20,9 +26,6 @@ public class WebsockMsgBrocker {
         private Long id;
         private Object data;
     }
-
-    @Autowired
-    SimpMessagingTemplate simpMessagingTemplate;
 
     public void send(MessagePacket messagePacket) {
         log.info(" ======= {}", messagePacket);

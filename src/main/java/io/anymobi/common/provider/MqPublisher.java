@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class MqPublisher {
 
-    final RabbitTemplate rabbitTemplate;
+    /*final RabbitTemplate rabbitTemplate;
 
     @Autowired
     public MqPublisher(RabbitTemplate rabbitTemplate) {
@@ -21,5 +21,5 @@ public class MqPublisher {
 
     public void websockMessagePublish(MessagePacket messagePacket) {
         rabbitTemplate.convertAndSend("exchange", "websock_message", messagePacket);
-    }
+    }*/
 }

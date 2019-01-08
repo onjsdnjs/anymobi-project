@@ -20,14 +20,9 @@ public class IndexController extends CommonLogger<IndexController> {
 
         return "index";
     }
-    @GetMapping("/home")
+    @GetMapping("/errortest")
     public String home(Model model, Principal principal) {
 
-        //model.addAttribute("message", "You are logged in as onjsdnjs" + principal.getName());
-
-        model.addAttribute("message", "You are logged in as onjsdnjs");
-        logger.info("Hello World!!");
-
-        return "home";
+        return "errorTest";
     }
 }
