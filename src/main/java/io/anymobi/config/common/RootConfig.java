@@ -7,5 +7,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @Configuration
 @EnableScheduling
-@ComponentScans(value = { @ComponentScan("io.anymobi.repositories"), @ComponentScan("io.anymobi.services"), @ComponentScan("io.anymobi.common") })
+@ComponentScans(value = { @ComponentScan("io.anymobi.repositories"),
+                          @ComponentScan("io.anymobi.services"),
+                          @ComponentScan("io.anymobi.common") })
 public class RootConfig { }

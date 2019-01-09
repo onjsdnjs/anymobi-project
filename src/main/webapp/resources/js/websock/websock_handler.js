@@ -15,5 +15,7 @@ client.connect({}, function(frame) {
         var data = payload.data;
         console.log("cmd ================== " + userId);
         console.log("cmd ================== " + data);
+        alert(userId);
+        alert(data);
     });
 });

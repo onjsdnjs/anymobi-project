@@ -15,6 +15,7 @@ public class WebSockMessageMqListener {
 
     @Autowired
     public WebSockMessageMqListener(WebsockMsgBrocker websockMsgBrocker) {
+
         this.websockMsgBrocker = websockMsgBrocker;
     }
 

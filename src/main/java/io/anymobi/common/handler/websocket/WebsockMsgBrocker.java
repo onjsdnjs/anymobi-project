@@ -4,26 +4,19 @@ import io.anymobi.domain.dto.hr.MessagePacketDto;
 import lombok.Builder;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.messaging.simp.SimpMessageSendingOperations;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Service;
 
 @Slf4j
 @Service
 public class WebsockMsgBrocker {
 
-    private SimpMessageSendingOperations simpMessagingTemplate;
+    private SimpMessagingTemplate simpMessagingTemplate;
 
-   /* @Autowired
-    public WebsockMsgBrocker(SimpMessageSendingOperations messaging){
+    @Autowired
+    public WebsockMsgBrocker(SimpMessagingTemplate messaging){
         this.simpMessagingTemplate=messaging;
-    }*/
-
-    @Data
-    @Builder
-    public static class SendToDTO {
-        private String cmd;
-        private Long id;
-        private Object data;
     }
 
     public void send(MessagePacketDto messagePacket) {

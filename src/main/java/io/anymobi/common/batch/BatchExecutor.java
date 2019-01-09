@@ -1,22 +1,24 @@
 package io.anymobi.common.batch;
 
+import io.anymobi.common.provider.MqPublisher;
+import io.anymobi.domain.dto.hr.MessagePacketDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Component;
 
 @Slf4j
-@RestController
-@RequestMapping("/batch")
+@Component
 public class BatchExecutor {
 
     private final Environment environment;
+    private final MqPublisher mqPublisher;
 
     @Autowired
-    public BatchExecutor(Environment environment) {
+    public BatchExecutor(Environment environment, MqPublisher mqPublisher) {
         this.environment = environment;
+        this.mqPublisher = mqPublisher;
     }
 
     @Scheduled(cron="0 0/1 * * * ?")
@@ -24,7 +26,13 @@ public class BatchExecutor {
         String key = environment.getActiveProfiles()[0] + "_generateChartData";
         log.info("### generateChartData ready {} ### ", key);
         log.info("### generateChartData begin ###");
-//            chartService.generateChart();
+
+        MessagePacketDto messagePacketDto = MessagePacketDto.builder()
+                .userId("anymobi")
+                .data("Hello RabbitMQ")
+                .build();
+        mqPublisher.websockMessagePublish(messagePacketDto);
+        
         log.info("### generateChartData end ###");
     }
 

@@ -8,7 +8,7 @@ import lombok.*;
 @Setter
 @Builder
 public class MessagePacketDto {
-    private Long userId;
+    private String userId;
     private Object data;
 }
 

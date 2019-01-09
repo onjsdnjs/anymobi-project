@@ -6,6 +6,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Insert title here</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="/js/websock/sockjs.min.js"></script>
+    <script src="/js/websock/stomp.min.js"></script>
+    <script src="/js/websock/websock_handler.js"></script>
+
 </head>
 <body>
 <ul id="authControl">

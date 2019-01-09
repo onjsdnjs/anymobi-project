@@ -2,11 +2,13 @@ package io.anymobi.config;
 
 import io.anymobi.config.common.AppConfig;
 import io.anymobi.config.common.RootConfig;
+import io.anymobi.config.data.AmqpConfig;
 import io.anymobi.config.data.DataConfig;
 import io.anymobi.config.data.JpaDataConfig;
 import io.anymobi.config.data.MybatisDataConfig;
 import io.anymobi.config.web.WebConfig;
 import io.anymobi.config.web.WebSecurityConfig;
+import io.anymobi.config.web.WebSocketConfig;
 import org.springframework.core.env.AbstractEnvironment;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
@@ -17,8 +19,8 @@ public class ApplicationInitializer extends AbstractAnnotationConfigDispatcherSe
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[] { RootConfig.class, AppConfig.class, DataConfig.class,
-                            JpaDataConfig.class, MybatisDataConfig.class, WebSecurityConfig.class };
+        return new Class[] { RootConfig.class, AppConfig.class, AmqpConfig.class, DataConfig.class,
+                            JpaDataConfig.class, MybatisDataConfig.class, WebSocketConfig.class, WebSecurityConfig.class };
     }
 
     @Override
