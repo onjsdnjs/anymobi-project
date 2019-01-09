@@ -1,6 +1,6 @@
 package io.anymobi.services.mybatis.member;
 
-import io.anymobi.domain.dto.hr.MemberDTO;
+import io.anymobi.domain.dto.hr.MemberDto;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -8,22 +8,22 @@ import java.util.List;
 @Service
 public class MemberServiceImpl implements MemberService {
     @Override
-    public List<MemberDTO> selectMemberList(MemberDTO user) throws Exception {
+    public List<MemberDto> selectMemberList(MemberDto user) throws Exception {
         return null;
     }
 
     @Override
-    public MemberDTO selectMember(Long id) throws Exception {
+    public MemberDto selectMember(Long id) throws Exception {
         return null;
     }
 
     @Override
-    public void insertMember(MemberDTO user) throws Exception {
+    public void insertMember(MemberDto user) throws Exception {
 
     }
 
     @Override
-    public void updateMember(MemberDTO user) throws Exception {
+    public void updateMember(MemberDto user) throws Exception {
 
     }
 }

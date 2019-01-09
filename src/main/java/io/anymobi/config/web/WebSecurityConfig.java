@@ -33,14 +33,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
-        http
+        /*http
                 .csrf()
                 .disable()
                 .authorizeRequests()
                 .antMatchers("/forbidden").denyAll()
-                .antMatchers("/**").permitAll();
-        /*http.authorizeRequests()
-                .antMatchers("/images/**","/css/**","/js/**","/login", "/logout", "/", "/j_spring_security_check").permitAll()
+                .antMatchers("/**").permitAll();*/
+        http.authorizeRequests()
+                .antMatchers("/users", "/images/**","/css/**","/js/**","/login", "/logout", "/", "/j_spring_security_check").permitAll()
                 .antMatchers("/admin/**").access("hasRole('ROLE_ADMIN')")
                 .antMatchers("/dba/**").access("hasRole('ROLE_ADMIN') or hasRole('ROLE_DBA')")
                 .anyRequest().hasAnyRole("ADMIN", "USER")
@@ -56,13 +56,19 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .rememberMe()
                 .and()
                 .addFilterAfter(new CsrfHeaderFilter(), CsrfFilter.class)
-                .csrf().csrfTokenRepository(csrfTokenRepository()).disable();*/
+                .csrf().csrfTokenRepository(csrfTokenRepository()).disable();
     }
 
     @Bean
     public PasswordEncoder passwordEncoder() {
 
         return PasswordEncoderFactories.createDelegatingPasswordEncoder();
+    }
+
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth.userDetailsService(userDetailsService)
+                .passwordEncoder(passwordEncoder());
     }
 
     @Bean
@@ -87,8 +93,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         return new CustomAuthenticationSuccessHandler();
     }
 
-    @Bean
+    /*@Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder() {
+
         return new BCryptPasswordEncoder();
-    }
+    }*/
 }

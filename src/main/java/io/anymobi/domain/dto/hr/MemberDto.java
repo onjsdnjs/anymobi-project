@@ -7,7 +7,7 @@ import lombok.*;
 @EqualsAndHashCode(of = "email")
 @Builder
 @NoArgsConstructor @AllArgsConstructor
-public class UserDTO {
+public class MemberDto {
 
     private Long id;
     private String userName;

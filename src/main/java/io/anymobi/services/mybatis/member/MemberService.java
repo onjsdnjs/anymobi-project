@@ -1,6 +1,6 @@
 package io.anymobi.services.mybatis.member;
 
-import io.anymobi.domain.dto.hr.MemberDTO;
+import io.anymobi.domain.dto.hr.MemberDto;
 
 import java.util.List;
 
@@ -14,11 +14,11 @@ import java.util.List;
  */
 public interface MemberService {
 	
-	List<MemberDTO> selectMemberList(MemberDTO user) throws Exception;
+	List<MemberDto> selectMemberList(MemberDto user) throws Exception;
 
-	MemberDTO selectMember(Long id) throws Exception;
+	MemberDto selectMember(Long id) throws Exception;
 	
-	void insertMember(MemberDTO user) throws Exception;
+	void insertMember(MemberDto user) throws Exception;
 	
-	void updateMember(MemberDTO user) throws Exception;
+	void updateMember(MemberDto user) throws Exception;
 }

@@ -1,6 +1,6 @@
 package io.anymobi.controller.web;
 
-import io.anymobi.domain.dto.hr.MemberDTO;
+import io.anymobi.domain.dto.hr.MemberDto;
 import io.anymobi.services.mybatis.member.MemberService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,21 +26,21 @@ public class MemberController {
 	MemberService memberService;
 	
 	@PostMapping(value="/rest/member/register")
-	public void registerMember(MemberDTO member) throws Exception {
+	public void registerMember(MemberDto member) throws Exception {
 
 		memberService.insertMember(member);
 		
 	}
 	
 	@GetMapping(value="/rest/member/{id}")
-	public MemberDTO selectMember(@PathVariable Long id) throws Exception {
+	public MemberDto selectMember(@PathVariable Long id) throws Exception {
 
-		MemberDTO Member = memberService.selectMember(id);
+		MemberDto Member = memberService.selectMember(id);
 		return Member;
 	}
 
 	@GetMapping(value="/rest/member/list")
-	public List<MemberDTO> selectMemberList(MemberDTO member) throws Exception {
+	public List<MemberDto> selectMemberList(MemberDto member) throws Exception {
 		
 		return memberService.selectMemberList(member);
 	}

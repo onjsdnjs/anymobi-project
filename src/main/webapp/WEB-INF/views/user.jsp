@@ -6,12 +6,14 @@
     <title>Insert title here</title>
 </head>
 <body>
-<script>
-    alert("${msg}");
-    alert("${version}");
-    alert("${baseurl}");
-    alert("${user}");
-    history.back();
-</script>
+<form action="/users" method="POST" name="loginform">
+
+    <input type="text" name="email" /> <br>
+    <input type="text" name="password" /> <br>
+
+    <input type="submit"/>
+
+
+</form>
 </body>
 </html>

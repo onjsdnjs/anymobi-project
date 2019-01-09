@@ -12,7 +12,7 @@ import java.util.Set;
 @Setter
 @EqualsAndHashCode(of = "id")
 @Builder
-@NoArgsConstructor @AllArgsConstructor
+@NoArgsConstructor @AllArgsConstructor @ToString
 public class User {
 
     @Id @GeneratedValue

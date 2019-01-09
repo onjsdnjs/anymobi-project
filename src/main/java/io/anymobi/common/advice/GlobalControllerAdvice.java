@@ -1,8 +1,8 @@
 package io.anymobi.common.advice;
 
-import io.anymobi.domain.dto.hr.CurrentUserDTO;
 import io.anymobi.domain.entity.User;
 import io.anymobi.repositories.jpa.UserRepository;
+import io.anymobi.services.jpa.user.UserAdapter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -14,7 +14,7 @@ import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 @Slf4j
-@ControllerAdvice(basePackages = "io.amymobi.controller")
+@ControllerAdvice
 public class GlobalControllerAdvice {
 
     final UserRepository userRepository;
@@ -28,7 +28,7 @@ public class GlobalControllerAdvice {
     
     @ModelAttribute("user")
     public User getCurrentUser(Authentication authentication) {
-        return (authentication == null) ? null : ((CurrentUserDTO) authentication.getPrincipal()).getUser();
+        return (authentication == null) ? null : ((UserAdapter) authentication.getPrincipal()).getUser();
     }
 
     @ModelAttribute("version")

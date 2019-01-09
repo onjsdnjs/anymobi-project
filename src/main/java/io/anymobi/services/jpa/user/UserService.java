@@ -1,6 +1,5 @@
 package io.anymobi.services.jpa.user;
 
-import io.anymobi.common.CommonLogger;
 import io.anymobi.common.annotation.SoftTransational;
 import io.anymobi.domain.entity.User;
 import io.anymobi.repositories.jpa.UserRepository;
@@ -40,6 +39,7 @@ public class UserService{
     @SoftTransational
     public User save(User user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
+        log.debug(user.getPassword());
         return userRepository.save(user);
     }
 

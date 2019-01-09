@@ -1,18 +1,18 @@
 package io.anymobi.repositories.mybatis.mapper.member;
 
 
-import io.anymobi.domain.dto.hr.MemberDTO;
+import io.anymobi.domain.dto.hr.MemberDto;
 
 import java.util.List;
 
 public interface MemberMapper {
 
-	List<MemberDTO> selectMemberList(MemberDTO Member) throws Exception;
+	List<MemberDto> selectMemberList(MemberDto Member) throws Exception;
 
-	MemberDTO selectMember(Long id) throws Exception;
+	MemberDto selectMember(Long id) throws Exception;
 	
-	void insertMember(MemberDTO Member) throws Exception;
+	void insertMember(MemberDto Member) throws Exception;
 	
-	void updateTeset(MemberDTO Member) throws Exception;
+	void updateTeset(MemberDto Member) throws Exception;
 	
 }
