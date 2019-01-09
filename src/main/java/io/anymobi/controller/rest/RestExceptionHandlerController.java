@@ -25,7 +25,7 @@ public class RestExceptionHandlerController {
 
     @GetMapping("/exceptionOnJsonRequest")
     public List<Map<String, Object>> exceptionOnJsonRequest() throws Exception{
-        throw new Exception();
+        throw new Exception("Json Exception");
     }
 
     @GetMapping("/sqlExceptionOnJsonRequest")

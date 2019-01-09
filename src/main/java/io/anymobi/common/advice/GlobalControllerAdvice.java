@@ -1,6 +1,6 @@
 package io.anymobi.common.advice;
 
-import io.anymobi.domain.dto.CurrentUserDTO;
+import io.anymobi.domain.dto.hr.CurrentUserDTO;
 import io.anymobi.domain.entity.User;
 import io.anymobi.repositories.jpa.UserRepository;
 import lombok.extern.slf4j.Slf4j;

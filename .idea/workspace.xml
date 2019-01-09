@@ -7,25 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6af3710-10a2-4578-bec6-779003a7804c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/RestControllerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/SqlControllerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/WebControllerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/common/exception/ErrorMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/controller/rest/RestExceptionHandlerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/controller/web/ExceptionHandlerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/errorTest.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/exception/ExceptionDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/exception/ExceptionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/hr/MessagePacketDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/CurrentUserControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/GlobalControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/GlobalControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/GlobalControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/RestControllerAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/SqlControllerAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/WebControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/WebControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/common/exception/ErrorMessage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/common/handler/websocket/WebsockMsgBrocker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/common/handler/websocket/WebsockMsgBrocker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/common/listener/mq/WebSockMessageMqListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/common/listener/mq/WebSockMessageMqListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/common/provider/MqPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/common/provider/MqPublisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/config/ApplicationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/config/ApplicationInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/config/common/RootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/config/common/RootConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/config/web/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/config/web/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/config/web/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/config/web/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/config/web/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/config/web/WebSocketConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/controller/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/controller/web/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/controller/rest/RestExceptionHandlerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/controller/rest/RestExceptionHandlerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/controller/web/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/controller/web/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/CurrentUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/hr/CurrentUserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/MemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/hr/MemberDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/MessagePacket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/hr/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/repositories/mybatis/mapper/member/MemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/repositories/mybatis/mapper/member/MemberMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/member/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/member/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/member/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/member/MemberServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/config_mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/config_mybatis.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -113,20 +116,20 @@
     <session id="-354528791">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.17" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="25" />
-          <entry key="JAVA" value="1106" />
+          <entry key="JAVA" value="1253" />
           <entry key="JSP" value="10" />
           <entry key="JavaScript" value="18" />
-          <entry key="PLAIN_TEXT" value="69" />
+          <entry key="PLAIN_TEXT" value="72" />
           <entry key="Properties" value="140" />
           <entry key="XML" value="51" />
         </counts>
@@ -135,7 +138,7 @@
         <counts>
           <entry key="CLASS" value="18" />
           <entry key="HTML" value="4" />
-          <entry key="JAVA" value="132" />
+          <entry key="JAVA" value="148" />
           <entry key="JSP" value="7" />
           <entry key="JavaScript" value="5" />
           <entry key="Properties" value="11" />
@@ -191,46 +194,83 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/RestControllerAdvice.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/controller/rest/RestExceptionHandlerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="35" />
+            <state relative-caret-position="257">
+              <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/hr/CurrentUserDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/hr/MemberDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/controller/rest/RestExceptionHandlerController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/hr/MessagePacketDto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="209">
+              <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/controller/web/ExceptionHandlerController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/hr/UserDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="171">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/exception/ExceptionDto.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/exception/ExceptionType.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/WebControllerAdvice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="295">
+              <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/GlobalControllerAdvice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -299,10 +339,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/users/MemberServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/common/listener/WebSockMessageMqListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/common/listener/mq/WebSockMessageMqListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/AbstractBaseService.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/common/batch/ChartGenerateBatchController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/websock/websock_handler.js" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/common/filter/CsrfHeaderFilter.java" />
@@ -346,10 +382,14 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/SqlControllerAdvice.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/controller/rest/ExceptionHandlerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/RestControllerAdvice.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/controller/web/ExceptionHandlerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/RestControllerAdvice.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/controller/rest/RestExceptionHandlerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/UserDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/exception/ExceptionType.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/WebControllerAdvice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/hr/MessagePacket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/hr/MessagePacketDto.java" />
       </list>
     </option>
   </component>
@@ -445,7 +485,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="anymobi" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="amplatform" type="b2602c69:ProjectViewProjectNode" />
@@ -454,8 +494,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="anymobi" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="advice" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="amplatform" type="b2602c69:ProjectViewProjectNode" />
@@ -464,8 +504,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="anymobi" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="advice" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
               <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -475,27 +515,9 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="anymobi" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amplatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amplatform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anymobi" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amplatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amplatform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anymobi" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+              <item name="hr" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="amplatform" type="b2602c69:ProjectViewProjectNode" />
@@ -540,7 +562,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546922606255" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546922612768" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../udemy/silverstring-exchange" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -551,16 +573,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="io.anymobi.services.mybatis.members" />
-      <recent name="io.anymobi.repository" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\onjsd\IdeaProjects\anymobi-project\src\main\java\io\anymobi\repositories" />
+      <recent name="C:\Users\onjsd\IdeaProjects\anymobi-project\src\main\java\io\anymobi\utils" />
+      <recent name="C:\Users\onjsd\IdeaProjects\anymobi-project" />
+      <recent name="D:\jsw\study\anymobi-project\amplatform\src\main" />
+      <recent name="D:\jsw\study\anymobi-project\amplatform" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\jsw\study\anymobi-project\amplatform\src\main\java\io\anymobi\domain\dto\exception" />
       <recent name="D:\jsw\study\anymobi-project\amplatform\src\main\webapp\WEB-INF\templates" />
       <recent name="D:\jsw\study\anymobi-project\amplatform\src\main\webapp\WEB-INF\views" />
       <recent name="D:\jsw\study\anymobi-project\amplatform\src\main\java\io\anymobi\domain\dto" />
       <recent name="D:\jsw\study\anymobi-project\amplatform\src\main\java\io\anymobi\common" />
-      <recent name="D:\jsw\study\anymobi-project\amplatform\src\main\webapp\resources\js" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="io.anymobi.controller.rest" />
@@ -569,12 +594,9 @@
       <recent name="io.anymobi.domain.dto" />
       <recent name="io.anymobi.services.jpa" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\onjsd\IdeaProjects\anymobi-project\src\main\java\io\anymobi\repositories" />
-      <recent name="C:\Users\onjsd\IdeaProjects\anymobi-project\src\main\java\io\anymobi\utils" />
-      <recent name="C:\Users\onjsd\IdeaProjects\anymobi-project" />
-      <recent name="D:\jsw\study\anymobi-project\amplatform\src\main" />
-      <recent name="D:\jsw\study\anymobi-project\amplatform" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="io.anymobi.services.mybatis.members" />
+      <recent name="io.anymobi.repository" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -683,12 +705,13 @@
       <workItem from="1546655441072" duration="6879000" />
       <workItem from="1546673260086" duration="20573000" />
       <workItem from="1546777845838" duration="7648000" />
-      <workItem from="1546905581320" duration="10052000" />
+      <workItem from="1546905581320" duration="10349000" />
+      <workItem from="1546994611976" duration="4521000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87757000" />
+    <option name="totallyTimeSpent" value="92575000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -701,8 +724,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -711,9 +735,9 @@
       <window_info id="Learn" order="6" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.4277959" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3984799" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3984799" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32943013" />
@@ -756,58 +780,22 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/WebControllerAdvice.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/io/anymobi/controller/rest/RestExceptionHandlerController.java</url>
           <line>21</line>
           <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/WebControllerAdvice.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/RestControllerAdvice.java</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/anymobi/controller/rest/RestExceptionHandlerController.java</url>
-          <line>22</line>
-          <properties />
-          <option name="timeStamp" value="22" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/io/anymobi/controller/rest/RestExceptionHandlerController.java</url>
           <line>27</line>
           <properties />
-          <option name="timeStamp" value="23" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/io/anymobi/controller/rest/RestExceptionHandlerController.java</url>
           <line>32</line>
           <properties />
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/anymobi/controller/web/ExceptionHandlerController.java</url>
-          <line>24</line>
-          <properties />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/anymobi/controller/web/ExceptionHandlerController.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/anymobi/controller/web/ExceptionHandlerController.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="28" />
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -816,30 +804,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/repositories/mybatis/mapper/member/MemberMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/amplatform/WEB-INF/classes/io/anymobi/services/mybatis/Members/MemberServiceImpl.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/members/MemebrServices.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/member/MemberService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/MemberServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/mybatis/member/MemberServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/services/jpa/user/UserAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
@@ -882,30 +846,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/controller/web/MemberController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/batch/BatchExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/CurrentUserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -940,29 +884,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/GlobalControllerAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1527#1528#0" expanded="true" />
-            <element signature="e#1585#1586#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE-sources.jar!/org/springframework/core/Ordered.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/controller/web/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -973,40 +898,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/exception/ErrorException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#181#182#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/exception/ErrorMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#181#182#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/exception/ErrorException.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/config/web/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -1021,16 +913,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/CommonControllerAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/CommonControllerAdvice.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/config/ApplicationInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1049,9 +932,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1059,9 +939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1076,9 +953,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1147,33 +1021,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/SqlControllerAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#790#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/RestControllerAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/controller/rest/UserRestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
@@ -1188,20 +1035,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/WebControllerAdvice.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/controller/web/MemberController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="490">
+          <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/controller/web/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/controller/web/ExceptionHandlerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
+        <state relative-caret-position="105">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/RestControllerAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="45" lean-forward="true" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/SqlControllerAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#0#790#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/GlobalControllerAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1210,11 +1098,82 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/controller/rest/RestExceptionHandlerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="257">
+          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/exception/ExceptionDto.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/exception/ExceptionType.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/hr/CurrentUserDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/hr/UserDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/exception/ErrorMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/common/advice/exception/WebControllerAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/hr/MessagePacket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/hr/MemberDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/anymobi/domain/dto/hr/MessagePacketDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
         </state>
       </provider>
     </entry>

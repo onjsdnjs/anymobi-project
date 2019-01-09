@@ -1,7 +1,7 @@
 package io.anymobi.common.listener.mq;
 
 import io.anymobi.common.handler.websocket.WebsockMsgBrocker;
-import io.anymobi.domain.dto.MessagePacket;
+import io.anymobi.domain.dto.hr.MessagePacketDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ public class WebSockMessageMqListener {
     }
 
     @RabbitListener(queues = "websock_message")
-    public void onMessage(final MessagePacket messagePacket) {
+    public void onMessage(final MessagePacketDto messagePacket) {
         log.info("* message::websock_message : {}", messagePacket);
         websockMsgBrocker.send(messagePacket);
     }

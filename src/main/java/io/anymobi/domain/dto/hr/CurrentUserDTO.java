@@ -1,4 +1,4 @@
-package io.anymobi.domain.dto;
+package io.anymobi.domain.dto.hr;
 
 
 import io.anymobi.domain.entity.User;

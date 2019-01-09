@@ -1,4 +1,4 @@
-package io.anymobi.domain.dto;
+package io.anymobi.domain.dto.hr;
 
 import lombok.*;
 
@@ -7,7 +7,8 @@ import lombok.*;
 @Getter
 @Setter
 @Builder
-public class MessagePacket {
+public class MessagePacketDto {
     private Long userId;
     private Object data;
 }
+

@@ -1,6 +1,6 @@
 package io.anymobi.services.mybatis.member;
 
-import io.anymobi.domain.dto.MemberDTO;
+import io.anymobi.domain.dto.hr.MemberDTO;
 
 import java.util.List;
 
