@@ -28,10 +28,10 @@ public class MybatisDataConfig extends DataConfig {
         return sb.getObject();
     }
 
-    @Bean
+   /* @Bean
     public DataSourceTransactionManager txManager(){
         DataSourceTransactionManager txManager = new DataSourceTransactionManager();
         txManager.setDataSource(dataSource());
         return txManager;
-    }
+    }*/
 }

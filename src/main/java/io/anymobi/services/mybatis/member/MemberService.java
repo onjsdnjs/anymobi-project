@@ -2,6 +2,7 @@ package io.anymobi.services.mybatis.member;
 
 import io.anymobi.domain.dto.hr.MemberDto;
 
+import java.sql.SQLException;
 import java.util.List;
 
 
@@ -14,11 +15,11 @@ import java.util.List;
  */
 public interface MemberService {
 	
-	List<MemberDto> selectMemberList(MemberDto user) throws Exception;
+	List<MemberDto> selectMemberList(MemberDto user) ;
 
-	MemberDto selectMember(Long id) throws Exception;
+	MemberDto selectMember(int id) ;
 	
-	void insertMember(MemberDto user) throws Exception;
+	void insertMember(MemberDto user) ;
 	
-	void updateMember(MemberDto user) throws Exception;
+	void updateMember(MemberDto memberDto);
 }

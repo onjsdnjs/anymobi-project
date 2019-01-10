@@ -8,6 +8,8 @@
 </head>
 <body>
 <h1>Hello World!!</h1>
-<a href="/users">회원가입</a>
+<a href="/users">회원가입(Jpa)</a><br>
+<a href="/members/join">회원가입(Mybatis)</a><br>
+<a href="/members/edit">회원수정(Mybatis)</a>
 </body>
 </html>

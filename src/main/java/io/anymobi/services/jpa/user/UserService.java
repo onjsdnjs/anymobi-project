@@ -1,6 +1,8 @@
 package io.anymobi.services.jpa.user;
 
 import io.anymobi.common.annotation.SoftTransational;
+import io.anymobi.common.provider.MqPublisher;
+import io.anymobi.domain.dto.hr.MessagePacketDto;
 import io.anymobi.domain.entity.User;
 import io.anymobi.repositories.jpa.UserRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -18,11 +20,15 @@ import java.util.Optional;
 @Slf4j
 public class UserService{
 
-    @Autowired
-    UserRepository userRepository;
+    private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
+    private final MqPublisher mqPublisher;
 
-    @Autowired
-    PasswordEncoder passwordEncoder;
+    public UserService(MqPublisher mqPublisher, PasswordEncoder passwordEncoder, UserRepository userRepository) {
+        this.mqPublisher = mqPublisher;
+        this.passwordEncoder = passwordEncoder;
+        this.userRepository = userRepository;
+    }
 
     @SoftTransational
     public Optional<User> findById(Long id) {
@@ -53,5 +59,18 @@ public class UserService{
     public void deleteById(Long id) {
 
         userRepository.deleteById(id);
+    }
+
+    @SoftTransational
+    public void socketService() {
+
+        List<User> users = userRepository.findAll();
+        users.forEach(user -> {
+            MessagePacketDto messagePacketDto = MessagePacketDto.builder()
+                    .userId("anymobi")
+                    .data("Hello RabbitMQ")
+                    .build();
+            mqPublisher.websockMessagePublish(messagePacketDto);
+        });
     }
 }

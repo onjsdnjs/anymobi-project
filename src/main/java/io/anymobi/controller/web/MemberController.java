@@ -4,6 +4,7 @@ import io.anymobi.domain.dto.hr.MemberDto;
 import io.anymobi.services.mybatis.member.MemberService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,30 +19,50 @@ import java.util.List;
  * </PRE>
  *
  */
-@RestController
+@Controller
 @Slf4j
 public class MemberController {
 
 	@Autowired
 	MemberService memberService;
+
+	@GetMapping(value="/members/join")
+	public String memberJoin() throws Exception {
+
+		return "member";
+	}
 	
-	@PostMapping(value="/rest/member/register")
-	public void registerMember(MemberDto member) throws Exception {
+	@PostMapping(value="/members")
+	public String registerMember(MemberDto member) throws Exception {
 
 		memberService.insertMember(member);
+		return "index";
 		
 	}
 	
-	@GetMapping(value="/rest/member/{id}")
-	public MemberDto selectMember(@PathVariable Long id) throws Exception {
+	@GetMapping(value="/members/{id}")
+	public MemberDto selectMember(@PathVariable int id) throws Exception {
 
 		MemberDto Member = memberService.selectMember(id);
 		return Member;
 	}
 
-	@GetMapping(value="/rest/member/list")
+	@GetMapping(value="/members")
 	public List<MemberDto> selectMemberList(MemberDto member) throws Exception {
 		
 		return memberService.selectMemberList(member);
+	}
+
+	@GetMapping(value="/members/edit")
+	public String memberEdit() throws Exception {
+
+		return "member_edit";
+	}
+
+	@PostMapping(value="/members/{id}")
+	public String editMember(@PathVariable int id, MemberDto memberDto) throws Exception {
+		memberDto.setId(id);
+		memberService.updateMember(memberDto);
+		return "index";
 	}
 }

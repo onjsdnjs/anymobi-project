@@ -13,12 +13,12 @@ import org.springframework.beans.factory.annotation.Autowired;
  *
  */
 @Slf4j
-public abstract class AbstractBaseService<T> {
+public abstract class AbstractBaseService<Mapper> {
 
 	@Autowired
 	protected CommonSqlRepository commonSqlRepository;
 	
-	protected <Mapper> Mapper getMapper(Class<Mapper> clz) {
+	protected Mapper getMapper(Class<Mapper> clz) {
 		Mapper mapper = (Mapper) commonSqlRepository.getSqlSession().getMapper(clz);
 		return mapper;
 	}

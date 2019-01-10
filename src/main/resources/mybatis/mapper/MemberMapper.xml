@@ -7,41 +7,35 @@
 		SELECT
 			id,
 			email,
-			passwd,
-			userName
-		FROM Members
+			password
+		FROM member
 	</select>
 
 	<select id="selectMember" parameterType="string" resultType="member">
 		SELECT 
 			id,
 			email,
-			passwd,
-			userName
+			password
 
-		FROM Members
+		FROM member
 		WHERE id = #{id}
 	</select>
 	
 	<insert id="insertMember" parameterType="member">
-		<selectKey keyProperty="id" order="AFTER" resultType="string">SELECT LAST_INSERT_ID()</selectKey>
-		INSERT INTO Members(
+		INSERT INTO member(
 								email,
-								passwd,
-		userName
+								password
 
 								)
-							VALUE(
+							VALUES(
 								#{email},
-								#{passwd},
-								#{userName}
-
+								#{password}
 								    )
 	</insert>
-	
+
 	<update id="updateMember" parameterType="member">
-		UPDATE Members SET
-		userName = #{userName}
+		UPDATE member SET
+		email = #{email}
 		WHERE id = #{id}
 	</update>
 	

@@ -33,14 +33,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
-        /*http
-                .csrf()
-                .disable()
-                .authorizeRequests()
-                .antMatchers("/forbidden").denyAll()
-                .antMatchers("/**").permitAll();*/
         http.authorizeRequests()
-                .antMatchers("/users", "/images/**","/css/**","/js/**","/login", "/logout", "/", "/j_spring_security_check").permitAll()
+                .antMatchers("/users", "/members", "/members/**", "/images/**","/css/**","/js/**","/login", "/logout", "/", "/j_spring_security_check").permitAll()
                 .antMatchers("/admin/**").access("hasRole('ROLE_ADMIN')")
                 .antMatchers("/dba/**").access("hasRole('ROLE_ADMIN') or hasRole('ROLE_DBA')")
                 .anyRequest().hasAnyRole("ADMIN", "USER")

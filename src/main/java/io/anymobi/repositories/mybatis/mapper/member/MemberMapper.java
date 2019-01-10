@@ -7,12 +7,10 @@ import java.util.List;
 
 public interface MemberMapper {
 
-	List<MemberDto> selectMemberList(MemberDto Member) throws Exception;
+	List<MemberDto> selectMemberList(MemberDto Member);
 
-	MemberDto selectMember(Long id) throws Exception;
+	MemberDto selectMember(int id);
 	
-	void insertMember(MemberDto Member) throws Exception;
-	
-	void updateTeset(MemberDto Member) throws Exception;
-	
+	void insertMember(MemberDto Member);
+
 }

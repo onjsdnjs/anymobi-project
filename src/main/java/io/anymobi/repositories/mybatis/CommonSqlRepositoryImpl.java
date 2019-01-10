@@ -42,45 +42,45 @@ public class CommonSqlRepositoryImpl implements CommonSqlRepository {
     	return sqlSession;
 	}
 
-	public int delete(String qName, Object parameter) throws SQLException {
+	public int delete(String qName, Object parameter) {
 		return this.sqlSession.delete(qName, parameter);
 	}
 
-	public int insert(String qName, Object parameter) throws SQLException {
+	public int insert(String qName, Object parameter) {
 		return this.sqlSession.insert(qName, parameter);
 	}
 
-	public int update(String qName, Object parameter) throws SQLException {
+	public int update(String qName, Object parameter) {
 		return this.sqlSession.update(qName, parameter);
 	}
 
-	public Object selectOne(String qName, Object parameter) throws SQLException {
+	public Object selectOne(String qName, Object parameter) {
 		return this.sqlSession.selectOne(qName, parameter);
 	}
 
 	@SuppressWarnings("rawtypes")
-	public List selectList(String qName, Object parameter) throws SQLException {
+	public List selectList(String qName, Object parameter) {
 		return this.sqlSession.selectList(qName, parameter);
 	}
 	
-	public int delete(String qName) throws SQLException {
+	public int delete(String qName) {
 		return delete(qName, null);
 	}
 
-	public int insert(String qName) throws SQLException {
+	public int insert(String qName) {
 		return insert(qName, null);
 	}
 
-	public int update(String qName) throws SQLException {
+	public int update(String qName) {
 		return update(qName, null);
 	}
 
-	public Object selectOne(String qName) throws SQLException {
+	public Object selectOne(String qName) {
 		return selectOne(qName, null);
 	}
 
 	@SuppressWarnings("rawtypes")
-	public List selectList(String qName) throws SQLException {
+	public List selectList(String qName) {
 		return selectList(qName, null);
 	}
 

@@ -1,4 +1,4 @@
-package io.anymobi.services.security;
+package io.anymobi.common.security;
 
 import io.anymobi.repositories.jpa.UserRepository;
 import io.anymobi.services.jpa.user.UserAdapter;

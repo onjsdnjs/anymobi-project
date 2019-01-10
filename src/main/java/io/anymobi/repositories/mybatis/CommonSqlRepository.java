@@ -21,8 +21,8 @@ public interface CommonSqlRepository {
      * @return
      * @throws SQLException
      */
-	int delete(String qName, Object parameter) throws SQLException;
-	int delete(String qName) throws SQLException;
+	int delete(String qName, Object parameter);
+	int delete(String qName);
 	
     /**
      * 특정 쿼리문 실행 : Insert
@@ -31,8 +31,8 @@ public interface CommonSqlRepository {
      * @return
      * @throws SQLException
      */
-	int insert(String qName, Object parameter) throws SQLException;
-	int insert(String qName) throws SQLException;
+	int insert(String qName, Object parameter);
+	int insert(String qName);
 	
 	/**
 	 * 틀정 쿼리문 실행 : Update
@@ -41,8 +41,8 @@ public interface CommonSqlRepository {
 	 * @return
 	 * @throws SQLException
 	 */
-	int update(String qName, Object parameter) throws SQLException;
-	int update(String qName) throws SQLException;
+	int update(String qName, Object parameter);
+	int update(String qName);
 	
     /**
      * 특정 쿼리문 실행 : SELECT - ONE
@@ -51,8 +51,8 @@ public interface CommonSqlRepository {
      * @return Object
      * @throws SQLException
      */
-	Object selectOne(String qName, Object parameter) throws SQLException;
-	Object selectOne(String qName) throws SQLException;
+	Object selectOne(String qName, Object parameter);
+	Object selectOne(String qName);
     
 	
 	/**
@@ -63,10 +63,10 @@ public interface CommonSqlRepository {
 	 * @throws SQLException
 	 */
 	@SuppressWarnings("rawtypes")
-	List selectList(String qName, Object parameter) throws SQLException;
+	List selectList(String qName, Object parameter);
 	
 	@SuppressWarnings("rawtypes")
-	List selectList(String qName) throws SQLException;
+	List selectList(String qName);
 	
 	public SqlSession getSqlSession();
 }
