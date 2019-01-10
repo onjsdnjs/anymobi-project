@@ -4,18 +4,17 @@ import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;
 import org.redisson.config.Config;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 import org.springframework.data.redis.repository.configuration.EnableRedisRepositories;
-import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 
 
 @Configuration
 @EnableCaching
-@EnableRedisRepositories
-@EnableRedisHttpSession
+//@EnableRedisRepositories(basePackages = "io.anymobi.repositories.redis")
 public class CacheConfig {
 
     @Autowired
