@@ -33,10 +33,10 @@
 								    )
 	</insert>
 
-	<update id="updateMember" parameterType="int">
+	<update id="updateMember" parameterType="member">
 		UPDATE member SET
 		email = #{email}
-		WHERE id = #{memberId}
+		WHERE id = #{id}
 	</update>
 	
 </mapper>
