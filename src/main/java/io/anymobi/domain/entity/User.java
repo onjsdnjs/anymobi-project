@@ -4,6 +4,7 @@ import io.anymobi.common.enums.UserRole;
 import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Set;
 
 @Entity
@@ -13,7 +14,7 @@ import java.util.Set;
 @EqualsAndHashCode(of = "id")
 @Builder
 @NoArgsConstructor @AllArgsConstructor @ToString
-public class User {
+public class User implements Serializable {
 
     @Id @GeneratedValue
     public Long id;

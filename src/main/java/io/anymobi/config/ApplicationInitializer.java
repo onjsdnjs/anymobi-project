@@ -17,7 +17,7 @@ public class ApplicationInitializer extends AbstractAnnotationConfigDispatcherSe
     @Override
     protected Class<?>[] getRootConfigClasses() {
         return new Class[] { RootConfig.class, AppConfig.class, AmqpConfig.class, DataConfig.class,
-                            JpaDataConfig.class, MybatisDataConfig.class, /*CacheConfig.class,*/ WebSocketConfig.class, WebSecurityConfig.class };
+                            JpaDataConfig.class, MybatisDataConfig.class, SessionConfig.class, WebSocketConfig.class, WebSecurityConfig.class };
     }
 
     @Override

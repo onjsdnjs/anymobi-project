@@ -32,12 +32,8 @@
         <logger name="io.anymobi" level="INFO" additivity="false" >
             <appender-ref ref="STDOUT" />
         </logger>
-        <logger name="io.anymobi.controller" level="INFO" additivity="false" >
-            <appender-ref ref="STDOUT" />
-        </logger>
-
-        <logger name="org.apache.commons.dbcp2" level="DEBUG"/>
-        <logger name="com.zaxxer.hikari" level="DEBUG"/>
+        <logger name="org.apache.commons.dbcp2" level="INFO"/>
+        <logger name="com.zaxxer.hikari" level="INFO"/>
 
         <ogger name="java.sql" level="ERROR"/>
 
