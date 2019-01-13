@@ -4,7 +4,7 @@ import io.anymobi.config.common.AppConfig;
 import io.anymobi.config.common.RootConfig;
 import io.anymobi.config.data.*;
 import io.anymobi.config.web.WebConfig;
-import io.anymobi.config.web.WebSecurityConfig;
+import io.anymobi.config.security.WebSecurityConfig;
 import io.anymobi.config.web.WebSocketConfig;
 import org.springframework.core.env.AbstractEnvironment;
 import org.springframework.web.filter.CharacterEncodingFilter;

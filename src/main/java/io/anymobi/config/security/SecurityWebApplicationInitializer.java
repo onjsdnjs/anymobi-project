@@ -1,4 +1,4 @@
-package io.anymobi.config.web;
+package io.anymobi.config.security;
 
 import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
 

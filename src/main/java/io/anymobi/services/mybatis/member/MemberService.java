@@ -1,8 +1,7 @@
 package io.anymobi.services.mybatis.member;
 
-import io.anymobi.domain.dto.hr.MemberDto;
+import io.anymobi.domain.dto.security.MemberDto;
 
-import java.sql.SQLException;
 import java.util.List;
 
 

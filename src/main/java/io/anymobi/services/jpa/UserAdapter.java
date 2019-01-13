@@ -1,4 +1,4 @@
-package io.anymobi.services.jpa.user;
+package io.anymobi.services.jpa;
 
 import io.anymobi.common.enums.UserRole;
 import org.springframework.security.core.GrantedAuthority;

@@ -1,7 +1,7 @@
 package io.anymobi.repositories.mybatis.mapper.member;
 
 
-import io.anymobi.domain.dto.hr.MemberDto;
+import io.anymobi.domain.dto.security.MemberDto;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package io.anymobi.common.provider;
 
-import io.anymobi.domain.dto.hr.MessagePacketDto;
+import io.anymobi.domain.dto.security.MessagePacketDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package io.anymobi.services.jpa.user;
+package io.anymobi.services.jpa;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonSerializer;

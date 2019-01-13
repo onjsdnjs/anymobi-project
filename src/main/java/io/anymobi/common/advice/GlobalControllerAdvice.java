@@ -2,7 +2,7 @@ package io.anymobi.common.advice;
 
 import io.anymobi.domain.entity.User;
 import io.anymobi.repositories.jpa.UserRepository;
-import io.anymobi.services.jpa.user.UserAdapter;
+import io.anymobi.services.jpa.UserAdapter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;

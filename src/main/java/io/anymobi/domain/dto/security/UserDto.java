@@ -1,4 +1,4 @@
-package io.anymobi.domain.dto.hr;
+package io.anymobi.domain.dto.security;
 
 import lombok.*;
 

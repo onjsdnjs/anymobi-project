@@ -1,4 +1,4 @@
-package io.anymobi.services.jpa.user;
+package io.anymobi.services.jpa;
 
 import io.anymobi.controller.rest.UserRestController;
 import io.anymobi.controller.web.MemberController;

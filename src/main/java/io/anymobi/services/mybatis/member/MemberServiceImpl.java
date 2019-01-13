@@ -1,6 +1,6 @@
 package io.anymobi.services.mybatis.member;
 
-import io.anymobi.domain.dto.hr.MemberDto;
+import io.anymobi.domain.dto.security.MemberDto;
 import io.anymobi.repositories.mybatis.mapper.member.MemberMapper;
 import io.anymobi.services.mybatis.AbstractBaseService;
 import org.springframework.stereotype.Service;

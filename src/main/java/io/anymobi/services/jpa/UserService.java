@@ -1,12 +1,11 @@
-package io.anymobi.services.jpa.user;
+package io.anymobi.services.jpa;
 
 import io.anymobi.common.annotation.SoftTransational;
 import io.anymobi.common.provider.MqPublisher;
-import io.anymobi.domain.dto.hr.MessagePacketDto;
+import io.anymobi.domain.dto.security.MessagePacketDto;
 import io.anymobi.domain.entity.User;
 import io.anymobi.repositories.jpa.UserRepository;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.data.domain.Example;
 import org.springframework.security.crypto.password.PasswordEncoder;

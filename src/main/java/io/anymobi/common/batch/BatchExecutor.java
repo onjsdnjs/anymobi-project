@@ -1,6 +1,6 @@
 package io.anymobi.common.batch;
 
-import io.anymobi.services.jpa.user.UserService;
+import io.anymobi.services.jpa.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;

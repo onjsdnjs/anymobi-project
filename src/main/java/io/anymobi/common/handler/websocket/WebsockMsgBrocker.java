@@ -1,8 +1,6 @@
 package io.anymobi.common.handler.websocket;
 
-import io.anymobi.domain.dto.hr.MessagePacketDto;
-import lombok.Builder;
-import lombok.Data;
+import io.anymobi.domain.dto.security.MessagePacketDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.simp.SimpMessagingTemplate;

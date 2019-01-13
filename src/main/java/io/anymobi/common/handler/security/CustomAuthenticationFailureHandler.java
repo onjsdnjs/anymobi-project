@@ -1,4 +1,4 @@
-package io.anymobi.common.handler.auth;
+package io.anymobi.common.handler.security;
 
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;

@@ -1,8 +1,8 @@
-package io.anymobi.config.web;
+package io.anymobi.config.security;
 
 import io.anymobi.common.filter.CsrfHeaderFilter;
-import io.anymobi.common.handler.auth.CustomAuthenticationFailureHandler;
-import io.anymobi.common.handler.auth.CustomAuthenticationSuccessHandler;
+import io.anymobi.common.handler.security.CustomAuthenticationFailureHandler;
+import io.anymobi.common.handler.security.CustomAuthenticationSuccessHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,7 +20,6 @@ import org.springframework.security.web.authentication.AuthenticationSuccessHand
 import org.springframework.security.web.csrf.CsrfFilter;
 import org.springframework.security.web.csrf.CsrfTokenRepository;
 import org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository;
-import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 
 @Configuration
 @EnableWebSecurity
